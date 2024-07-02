@@ -10,6 +10,21 @@ body {
     padding: 0;
 }
 
+.btn-primary {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(255, 84, 0);
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.btn-primary:hover {
+    background-color: darkgray;
+}
+
 
 
 /* Header section */
@@ -107,6 +122,36 @@ nav {
     background-color: rgb(255, 84, 0);
     cursor: pointer;
 }
+.hero-btn:hover {
+    background-color: darkgray;
+}
+
+/* main section */
+main {
+    padding: 0 150px;
+    margin: 50px auto;
+}
+/* Tour Section */
+.tour-title {
+    color: rgb(19, 19, 24);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.tour-info, .tour-content > ul {
+    color: rgba(19, 19, 24, 0.7);
+}
+.tour-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.tour-img img  {
+    border-radius: 16px;
+    border: none;
+}
 
 
 
@@ -146,6 +191,27 @@ nav {
     .hero-info {
         width: 100%;
     }
+    /* tour section */
+    main {
+        padding: 0 20px;
+    }
+    .tour-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tour-img img {
+        width: 100%;
+    }
+    .tour-title {
+        font-size: 1.2rem;
+    }
+    .tour-info, .tour-container>ul {
+        font-size: 0.9rem;
+    }
+    .btn-primary {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+        margin-top: 1rem;
+    }
 
 }
 
@@ -154,7 +220,7 @@ nav {
 @media screen and (min-width: 577px) and (max-width: 1024px) {
 
     /* header section */
-    header {
+    header, main {
         padding: 0 50px;
     }
 
@@ -176,6 +242,10 @@ nav {
 
     .hero-info {
         width: 80%;
+    }
+    /* tour section */
+    .tour-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
