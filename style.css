@@ -132,25 +132,45 @@ main {
     margin: 50px auto;
 }
 /* Tour Section */
-.tour-title {
+.tour-title, .destination-title {
     color: rgb(19, 19, 24);
     font-size: 2.5rem;
     font-weight: 800;
 }
-.tour-info, .tour-content > ul {
+.tour-info, .tour-content > ul, .destination-info {
     color: rgba(19, 19, 24, 0.7);
 }
 .tour-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
     gap: 3.2rem;
 }
 
 .tour-img img  {
     border-radius: 16px;
     border: none;
+}
+/* Destination section */
+.destination {
+    margin: 50px 0px;
+}
+.destination-info, .destination-title {
+    text-align: center;
+}
+.destination-info {
+    width: 50%;
+    margin: 0 auto;
+}
+.destination-img {
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+/* background images */
+.c1d1 {
+    background-image: url('./Images/Rectangle\ 5.png');
+    background-repeat: no-repeat;
+    
 }
 
 
